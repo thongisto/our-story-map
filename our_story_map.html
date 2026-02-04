@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1e15c8ac0acd793532fb49a6282e75cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1e15c8ac0acd793532fb49a6282e75cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1e15c8ac0acd793532fb49a6282e75cc = L.map(
+                "map_1e15c8ac0acd793532fb49a6282e75cc",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f53a6e58acdbb9d0ce9d3d70354672cc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1e15c8ac0acd793532fb49a6282e75cc);
+        
+    
+            var feature_group_f11b3f8f481f7387bda52c9f5ec4b82e = L.featureGroup(
+                {}
+            ).addTo(map_1e15c8ac0acd793532fb49a6282e75cc);
+        
+    
+            var marker_9b27a04342676a272040c5ba2b091a71 = L.marker(
+                [44.8113, -91.4985],
+                {}
+            ).addTo(feature_group_f11b3f8f481f7387bda52c9f5ec4b82e);
+        
+    
+            var icon_25626c2d316eb2d26d48428bbef52cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b27a04342676a272040c5ba2b091a71.setIcon(icon_25626c2d316eb2d26d48428bbef52cf2);
+        
+    
+        var popup_212b58cde1ab5102dde2adad6f096235 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3d825dfa83f0211abaa451bb0b7a468 = $(`<div id="html_c3d825dfa83f0211abaa451bb0b7a468" style="width: 100.0%; height: 100.0%;">Eau Claire, WI<br>2017–2021</div>`)[0];
+            popup_212b58cde1ab5102dde2adad6f096235.setContent(html_c3d825dfa83f0211abaa451bb0b7a468);
+        
+
+        marker_9b27a04342676a272040c5ba2b091a71.bindPopup(popup_212b58cde1ab5102dde2adad6f096235)
+        ;
+
+        
+    
+    
+            var poly_line_45987dca9a2e9f1c57fcaaf99cdbcf2d = L.polyline(
+                [[43.5325, -90.0021], [44.8113, -91.4985], [44.5133, -88.0133], [29.7604, -95.3698]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f11b3f8f481f7387bda52c9f5ec4b82e);
+        
+    
+            poly_line_45987dca9a2e9f1c57fcaaf99cdbcf2d.bindTooltip(
+                `<div>
+                     Her timeline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_06884671983b1f0ba7548d65868a89d6 = L.featureGroup(
+                {}
+            ).addTo(map_1e15c8ac0acd793532fb49a6282e75cc);
+        
+    
+            var marker_c3b6628c4e851bb066756083dbe508c2 = L.marker(
+                [43.0731, -89.4012],
+                {}
+            ).addTo(feature_group_06884671983b1f0ba7548d65868a89d6);
+        
+    
+            var icon_1f0a9f383f38ca1b2084174452898406 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c3b6628c4e851bb066756083dbe508c2.setIcon(icon_1f0a9f383f38ca1b2084174452898406);
+        
+    
+        var popup_0029d03f7844b25d712edbaf25a85975 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73e5052c918b3b52466d137ddf231d92 = $(`<div id="html_73e5052c918b3b52466d137ddf231d92" style="width: 100.0%; height: 100.0%;">Madison, WI<br>2017–2021</div>`)[0];
+            popup_0029d03f7844b25d712edbaf25a85975.setContent(html_73e5052c918b3b52466d137ddf231d92);
+        
+
+        marker_c3b6628c4e851bb066756083dbe508c2.bindPopup(popup_0029d03f7844b25d712edbaf25a85975)
+        ;
+
+        
+    
+    
+            var poly_line_ddcea8903db6aaffdde6ab8d8edbc220 = L.polyline(
+                [[43.5325, -90.0021], [43.0731, -89.4012], [44.5133, -88.0133], [29.7604, -95.3698]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_06884671983b1f0ba7548d65868a89d6);
+        
+    
+            poly_line_ddcea8903db6aaffdde6ab8d8edbc220.bindTooltip(
+                `<div>
+                     His timeline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_575f5fde9ee91e216f2e951d18cdd991 = L.featureGroup(
+                {}
+            ).addTo(map_1e15c8ac0acd793532fb49a6282e75cc);
+        
+    
+            var marker_47a6d0e48dfecceed41ccfa62a2b29c1 = L.marker(
+                [43.5325, -90.0021],
+                {}
+            ).addTo(feature_group_575f5fde9ee91e216f2e951d18cdd991);
+        
+    
+            var icon_eaa305816a6050f35c6a9b31326f3678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47a6d0e48dfecceed41ccfa62a2b29c1.setIcon(icon_eaa305816a6050f35c6a9b31326f3678);
+        
+    
+        var popup_d06643918d44efb9e3d43d634a1eebb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_595d627e0d6d3fca7a23d0e1ceecaa10 = $(`<div id="html_595d627e0d6d3fca7a23d0e1ceecaa10" style="width: 100.0%; height: 100.0%;">Reedsburg, WI<br>2016<br>Together ❤️</div>`)[0];
+            popup_d06643918d44efb9e3d43d634a1eebb1.setContent(html_595d627e0d6d3fca7a23d0e1ceecaa10);
+        
+
+        marker_47a6d0e48dfecceed41ccfa62a2b29c1.bindPopup(popup_d06643918d44efb9e3d43d634a1eebb1)
+        ;
+
+        
+    
+    
+            var marker_a74700f4ecc3b174c9bc4c9d2b2c7509 = L.marker(
+                [44.5133, -88.0133],
+                {}
+            ).addTo(feature_group_575f5fde9ee91e216f2e951d18cdd991);
+        
+    
+            var icon_ca102392424d0e0575eb2cfb80b4ae96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a74700f4ecc3b174c9bc4c9d2b2c7509.setIcon(icon_ca102392424d0e0575eb2cfb80b4ae96);
+        
+    
+        var popup_c2937afa74d164a915962819abb6dca1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03220f39cd47c73cb1b3d74654d4b24e = $(`<div id="html_03220f39cd47c73cb1b3d74654d4b24e" style="width: 100.0%; height: 100.0%;">Green Bay, WI<br>2021–2022<br>Together ❤️</div>`)[0];
+            popup_c2937afa74d164a915962819abb6dca1.setContent(html_03220f39cd47c73cb1b3d74654d4b24e);
+        
+
+        marker_a74700f4ecc3b174c9bc4c9d2b2c7509.bindPopup(popup_c2937afa74d164a915962819abb6dca1)
+        ;
+
+        
+    
+    
+            var marker_531bc468559b7e34a3ce54b80ae38f7d = L.marker(
+                [29.7604, -95.3698],
+                {}
+            ).addTo(feature_group_575f5fde9ee91e216f2e951d18cdd991);
+        
+    
+            var icon_1406480d35c8543813fa73f0a97975c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_531bc468559b7e34a3ce54b80ae38f7d.setIcon(icon_1406480d35c8543813fa73f0a97975c2);
+        
+    
+        var popup_3c6b307f2602df77c344e7627a7eca74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ee8178e15f8eda68a9ffcabc51017ec = $(`<div id="html_7ee8178e15f8eda68a9ffcabc51017ec" style="width: 100.0%; height: 100.0%;">Houston, TX<br>2023–2026<br>Together ❤️</div>`)[0];
+            popup_3c6b307f2602df77c344e7627a7eca74.setContent(html_7ee8178e15f8eda68a9ffcabc51017ec);
+        
+
+        marker_531bc468559b7e34a3ce54b80ae38f7d.bindPopup(popup_3c6b307f2602df77c344e7627a7eca74)
+        ;
+
+        
+    
+    
+            var layer_control_d608a8e669185378672b32d395fc666a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f53a6e58acdbb9d0ce9d3d70354672cc,
+                },
+                overlays :  {
+                    "Her Journey \ud83d\udc99" : feature_group_f11b3f8f481f7387bda52c9f5ec4b82e,
+                    "His Journey \ud83d\udc9a" : feature_group_06884671983b1f0ba7548d65868a89d6,
+                    "Together \u2764\ufe0f" : feature_group_575f5fde9ee91e216f2e951d18cdd991,
+                },
+            };
+            L.control.layers(
+                layer_control_d608a8e669185378672b32d395fc666a.base_layers,
+                layer_control_d608a8e669185378672b32d395fc666a.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_1e15c8ac0acd793532fb49a6282e75cc);
+        
+</script>
+</html>
